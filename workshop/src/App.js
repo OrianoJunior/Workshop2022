@@ -1,25 +1,40 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import "./styles/estilos.css"
+import Menu from './Menu'
+import Inicio from './componentes/Inicio'
+import Edif from './componentes/Edif'
+import Redes from './componentes/Redes'
+import Estetica from './componentes/Estetica'
+import Cronograma from './componentes/Cronograma'
+import Localizacao from './componentes/Localizacao'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const App = () => {
+
+const post = window.location.pathname
+console.log(post);
+let Tela
+if (post == '/') {
+  Tela = <Inicio />
+}else if(post == "/Edificacoes"){
+  Tela = <Edif />
+}else if(post == "/Redes_de_computadores"){
+  Tela = < Redes/>
+}else if(post == "/Estetica"){
+  Tela = <Estetica/>
+}else if(post == "/cronograma"){
+  Tela = < Cronograma/>
+}else if(post == "/localizacao"){
+  Tela = < Localizacao/>
 }
 
-export default App;
+
+
+  return (
+    <div>
+      <Menu/>
+      {Tela}
+    </div>
+  )
+}
+
+export default App
