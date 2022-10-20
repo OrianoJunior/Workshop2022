@@ -1,0 +1,9 @@
+.eventos{
+  display: grid;
+  grid-template-columns: 50px 2fr 1.2fr;
+  margin: 1rem;
+}
+h1{
+  grid-column: 2/5;
+}
+.eventos div{}

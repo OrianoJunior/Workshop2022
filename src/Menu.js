@@ -16,8 +16,14 @@ const Menu = () => {
             <li><a href='./Estetica'>Estetica</a></li>
           </ul>
           </li>
-          <li><a href='./cronograma'>Cronograma</a></li>
-          
+          <li className='dropdown-menu'><a href='' className='dropbtn' onClick={Fixo}>Cronograma</a>
+          <ul className='dropdown-header'>
+            <li><a href='./Cronograma_de_Edificacoes'>Conheca Edificações</a></li>
+            <li><a href='./Cronograma_de_Redes_de_computadores'>Conheca Redes de computadores</a></li>
+            <li><a href='./Cronograma_de_Estetica'>Conheca Estetica</a></li>
+          </ul>
+          </li>
+         
         </ul>
       </nav>
     </div>

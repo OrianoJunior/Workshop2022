@@ -4,15 +4,17 @@ import Inicio from './pages/Inicio'
 import Edif from './pages/Edif'
 import Redes from './pages/Redes'
 import Estetica from './pages/Estetica'
-import Cronograma from './pages/Cronograma'
 import Cabesalho from './Cabesalho'
+import Credes from './pages/Credes'
+import Cest from './pages/Cest'
+import Cedif from './pages/Cedif'
 
 
 
 const App = () => {
 
 const post = window.location.pathname
-console.log(post);
+
 let Tela
 if (post == '/') {
   Tela = <Inicio />
@@ -22,12 +24,13 @@ if (post == '/') {
   Tela = < Redes/>
 }else if(post == "/Estetica"){
   Tela = <Estetica/>
-}else if(post == "/cronograma"){
-  Tela = < Cronograma/>
+}else if(post == "/Cronograma_de_Edificacoes"){
+  Tela = < Cedif/>
+}else if(post == "/Cronograma_de_Redes_de_computadores"){
+  Tela = < Credes/>
+}else if(post == "/Cronograma_de_Estetica"){
+  Tela = < Cest/>
 }
-
-
-
   return (
     <div>
       <Menu/>
