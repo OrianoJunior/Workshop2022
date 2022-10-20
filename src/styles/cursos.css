@@ -1,0 +1,47 @@
+body{
+  background-color: #ddd;
+}
+.cursos{
+  display: grid;
+  grid-template-columns: 0.5fr 140px minmax(300px, 800px) 1fr;
+  max-width: 100%;
+}
+.cursoTitulo{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 5rem;
+  line-height: 1;
+  font-weight: 400;
+  margin-bottom: 1rem;
+  grid-column: 2/5;
+  text-transform: uppercase;
+}
+
+.descricao{
+  grid-column: 2/4;
+  font-size: 1.5rem;
+  margin-top: 0px;
+  
+  margin-right: 20px;
+
+  padding: 20px;
+  
+}
+img{
+  display: block;
+  max-width: 100%;
+  
+}
+.foto{
+    background: red;
+    
+    animation: go-back 3s;
+  }
+  
+@keyframes go-back {
+  from {
+    transform: translateX(300px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}

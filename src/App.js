@@ -1,12 +1,13 @@
 import React from 'react'
-import "./styles/estilos.css"
 import Menu from './Menu'
-import Inicio from './componentes/Inicio'
-import Edif from './componentes/Edif'
-import Redes from './componentes/Redes'
-import Estetica from './componentes/Estetica'
-import Cronograma from './componentes/Cronograma'
-import Localizacao from './componentes/Localizacao'
+import Inicio from './pages/Inicio'
+import Edif from './pages/Edif'
+import Redes from './pages/Redes'
+import Estetica from './pages/Estetica'
+import Cronograma from './pages/Cronograma'
+import Cabesalho from './Cabesalho'
+
+
 
 const App = () => {
 
@@ -23,8 +24,6 @@ if (post == '/') {
   Tela = <Estetica/>
 }else if(post == "/cronograma"){
   Tela = < Cronograma/>
-}else if(post == "/localizacao"){
-  Tela = < Localizacao/>
 }
 
 
@@ -33,6 +32,7 @@ if (post == '/') {
     <div>
       <Menu/>
       {Tela}
+      <Cabesalho/>
     </div>
   )
 }
