@@ -1,16 +1,21 @@
 .teladeinicio{
-  display:  grid;
-  padding: 4%;
+  display: flex;
+  width: 100%;
   max-width: 100%;
-  grid-template-columns: 0.5fr 5fr 2fr;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  
 }
 .teladeinicio h1{
   font-family: 'Courier New', Courier, monospace;
-  grid-column: 2/4;
   color: #006400;
   font-size: 50px;
+  margin: 3rem;
 }
 .teladeinicio p{
-  font-size: 20px;
-  grid-column: 2/3;
+  margin: auto;
+  text-align: justify;
+  width: 90%;
+  font-size: 1.3rem;
 }
