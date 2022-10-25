@@ -32,8 +32,8 @@ const Cursos = ({ curso, sinopse, foto }) => {
         opacity: 1
       }}
       transition={{
-        delay: 0.3,
-        x: { duration: 1 },
+        delay: 0.4,
+        x: { duration: 3000000 },
         default: { ease: "linear" }
       }}>
         <img src={foto} className="foto" />
